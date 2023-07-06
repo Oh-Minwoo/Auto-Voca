@@ -1,0 +1,48 @@
+{
+	"activated": [
+		{
+			"word": "contribute",
+			"meaning": [
+				"기여하다"
+			],
+			"memoCount": 0
+		},
+		{
+			"word": "vanish",
+			"meaning": [
+				"사라지다",
+				"없어지다"
+			],
+			"memoCount": 0
+		},
+		{
+			"word": "today",
+			"meaning": [
+				"오늘"
+			],
+			"memoCount": 0
+		},
+		{
+			"word": "vacuum",
+			"meaning": [
+				"진공의"
+			],
+			"memoCount": 0
+		},
+		{
+			"word": "hello",
+			"meaning": [
+				"안녕"
+			],
+			"memoCount": 0
+		},
+		{
+			"word": "spaghetti",
+			"meaning": [
+				"스파게티"
+			],
+			"memoCount": 0
+		}
+	],
+	"inactivated": []
+}
