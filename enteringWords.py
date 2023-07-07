@@ -10,7 +10,9 @@ from flet import (
     TextField,
     Row,
     Column,
-    Icon
+    Icon, 
+    Tabs,
+    Tab
 )
 
 def create_entering_page(page: Page):
@@ -109,22 +111,33 @@ def create_entering_page(page: Page):
     btn = flet.ElevatedButton("Submit", on_click=btnClick)
     btnSave = flet.FilledButton("Save", icon="add", on_click=save)
     
-    return Row(
-        controls=[
-            Column(
-                controls=[
-                    titleForInput,
-                    word,
-                    meaning,
-                    Row(
-                        controls=[
-                            btn,
-                            btnSave
-                        ]
-                    )
-                ],
-                expand=True,
+    return Tabs(
+        selected_index=0,
+        animation_duration=0,
+        scrollable=False,
+        tabs= [
+            Tab(
+                text = "단어 입력",
+                icon = flet.icons.INPUT_ROUNDED,
+                content = Column(
+                    controls=[
+                        titleForInput,
+                        word,
+                        meaning,
+                        Row(
+                            controls=[
+                                btn,
+                                btnSave
+                            ]
+                        )
+                    ],
+                    expand=True,
+                )
             ),
-            wordsData
-        ],
+            Tab(
+                text="단어 보기",
+                icon=flet.icons.ABC_ROUNDED,
+                content=wordsData
+            )
+        ]
     )
